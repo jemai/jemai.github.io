@@ -8,11 +8,17 @@
     <!-- SPELLS -->
     <!-- load angular via CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>      <script src="src/app.js"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="src/app.js"></script>
+        <script src="src/home/homeController.js"></script>
+        <script src="src/about/aboutController.js"></script>
+        <script src="src/projects/projectsController.js"></script>
+        <script src="src/samples/samplesController.js"></script>
+        <script src="src/contact/contactController.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
     <title>Welcome</title>
   </head>
-  <body ng-controller="mainController">
+  <body >
     <!-- HEADER AND NAVBAR -->
     <header>
         <nav class="navbar navbar-default">
@@ -22,7 +28,6 @@
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
                 <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
                 <li><a href="#projects"><i class="fa fa-shield"></i>Projects</a></li>
                 <li><a href="#samples"><i class="fa fa-shield"></i> Samples</a></li>
