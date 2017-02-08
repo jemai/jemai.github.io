@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="portfolio">
   <head>
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+    <!-- SPELLS -->
+    <!-- load angular via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>      <script src="src/app.js"></script>
+
     <title>Welcome</title>
   </head>
-  <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
+  <body ng-controller="mainController">
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Abdelhak jemaii</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                <li><a href="#projects"><i class="fa fa-shield"></i>Projects</a></li>
+                <li><a href="#samples"><i class="fa fa-shield"></i> Samples</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+
+    <div id="main">
+
+                <div ng-view></div>
+
     </div>
-    </body>
+
+
+      </body>
 </html>
