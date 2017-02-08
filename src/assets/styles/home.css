@@ -1,0 +1,11 @@
+h2.imageText {
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    color: #fff ;
+}
+
+div.imageLayer {
+  position: absolute;
+  background-color: #fff;
+}
