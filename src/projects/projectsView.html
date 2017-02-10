@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
     <div  class="container">
 
         <div class="row">
@@ -11,17 +18,20 @@
                             class="img-rounded img-responsive well-image">
                     </div>
                     <div class="col-md-6">
-                        <h1>{{project.title}}</h1>
+                        <p><strong>Title: </strong>{{project.title}}</p>
                         <p><strong>Technologies: </strong>{{project.tech}}</p>
                         <p><strong>Description: </strong>{{project.description}}</p>
                         <!-- ng-click is an angular directive to allow click events within angular -->
                     <!-- data-toggle and data-target are bootstrap attributes to trigger the popup modal -->
-                        <button class="btn btn-primary pull-right"
+                        <button class="btn pull-right"
                             data-toggle="modal"
                             data-target="#proj-info"
-                            ng-click="changeActiveProject(project)">Learn More</button>
+                            ng-click="changeActiveProject(project)"style="background-color: #EC5D44">Learn More</button>
                     </div>
                 </div><!-- row -->
             </div><!-- well -->
         </div><!-- col-xs-6 -->
     </div>
+
+  </body>
+</html>
